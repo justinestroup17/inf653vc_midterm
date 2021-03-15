@@ -3,8 +3,7 @@
 <!-- the head section -->
 <head>
     <title>Zippy Used Autos</title>
-    <link rel="stylesheet" type="text/css"
-          href="/justine_stroup_inf653vc_midterm/main.css">
+    <link rel="stylesheet" type="text/css">
 </head>
 
 <!-- the body section -->
