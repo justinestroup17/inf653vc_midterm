@@ -1,10 +1,10 @@
-<?php include('view/header.php');
+<?php include('../view/header.php');
 // Import the five files from the model
-require('model/database.php');
-require('model/classes_db.php');
-require('model/makes_db.php');
-require('model/types_db.php');
-require('model/vehicles_db.php');
+require('../model/database.php');
+require('../model/classes_db.php');
+require('../model/makes_db.php');
+require('../model/types_db.php');
+require('../model/vehicles_db.php');
 
 $vehicle_id = filter_input(INPUT_POST, 'vehicle_id', FILTER_VALIDATE_INT);
 $year = filter_input(INPUT_POST, 'year', FILTER_VALIDATE_INT);
@@ -43,6 +43,6 @@ switch($action) {
     $makes = get_makes();
     $types = get_types();
     $classes = get_classes();
-    include('view/vehicle_list.php');
+    include('../view/vehicle_list.php');
 }
 ?>
